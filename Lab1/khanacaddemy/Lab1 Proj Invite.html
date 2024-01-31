@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Project: Event invite</title>
+    <style>
+        body {
+            overflow: hidden;
+            font-family: Garamond;
+            font-size: 2em;
+            color: rgb(68, 0, 107);
+        }
+        img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1320px;
+            height: 500px;
+            opacity: 20%;
+            z-index: 1;
+        }
+        #mainhead {
+            text-align: center;
+            z-index: 6;
+            opacity: 100%;
+        }
+        #weddinghead {
+            background: -webkit-linear-gradient(#ff0000, #8c00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3, ul, p {
+            margin-left: 40px;
+        }
+        p, ul {
+            font-weight: bold;
+        }
+        #name {
+            font-weight: bold;
+        }
+        button {
+            width: 250px;
+            height: 100px;
+            background-color: rgb(211, 137, 255);
+            border: 5px solid rgb(210, 210, 210);
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+        }
+        button:hover {
+            cursor: pointer;
+            box-shadow: 0 4px 12px 0 rgba(68, 68, 68, 0.24), 0 17px 50px 0 rgba(73, 73, 73, 0.19);
+        }
+        button:active {
+            background-color: rgb(218, 156, 255);
+            border: 5px solid rgb(232, 232, 232);
+        }
+        .answer {
+            position: absolute;
+            top: 550px;
+            left: 540px;
+        }
+    </style>
+</head>
+<body>
+
+<img src="wild-flowers-wallpaper-peach-and-green-p8717-35727_image.jpg">
+
+<h1 id="mainhead">Hello, <span id="name">Maria</span>! <br>You're invited to our <span id="weddinghead">Wedding</span>!</h1>
+<h3>We'd be pleased if you came!</h3>
+
+<p class="details">The details:</p>
+<ul>
+    <li>30 February 2024</li>
+    <li>Kazakh-British Technical University</li>
+    <li>Dress-code: Pokemon universe</li>
+</ul>
+<div class="answer">
+<button>Accept invitation</button>
+</div>
+
+
+</body>
+</html>
