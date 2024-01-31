@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Project: Blog</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            width: 1920px;
+            overflow-x: hidden;
+            font-family: Verdana;
+            font-size: 0.8em;
+        }
+        #maintab {
+            display: inline;
+            box-sizing: border-box;
+            width: 1920px;
+            position: fixed;
+            z-index: 5;
+            top: 0px;
+            margin-top: -5px;
+            margin-left: -10px;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 47px;
+            padding-left: 30px;
+            background-color: rgb(56, 56, 56);
+        }
+        h1 {
+            top: 0px;
+            margin-top: -5px;
+            margin-left: -10px;
+            position: fixed;
+            z-index: 3;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-bottom: 0px;
+            color: rgb(211, 211, 211);
+        }
+        #home {
+            top: 5px;
+            left: 300px;
+            margin-top: -5px;
+            margin-left: -10px;
+            position: fixed;
+            z-index: 3;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-bottom: 0px;
+            color: rgb(211, 211, 211);
+        }
+        #home:hover, #profile:hover {
+            cursor: pointer;
+            color: rgb(91, 91, 91);
+         }
+        #profile {
+            top: 5px;
+            left: 470px;
+            margin-top: -5px;
+            margin-left: -10px;
+            position: fixed;
+            z-index: 3;
+            padding-top: 20px;
+            padding-left: 30px;
+            padding-bottom: 0px;
+            color: rgb(211, 211, 211);
+        }
+        #profilerect {
+            width: 1295px;
+            position: absolute;
+            top: 63px;
+            left: -5px;
+            background-color: rgb(91, 91, 91);
+            padding: 20px;
+            display: flex;
+        }
+        #avatar {
+            border-radius: 50%;
+            border: 1px solid white;
+            float: left;
+            display: inline;
+            width: 200px;
+            margin-left: 20px;
+        }
+        #username {
+            float: left;
+            margin-left: 30px;
+            font-size: 30px;
+            color: rgb(211, 211, 211);
+        }
+        #usertag {
+            position: absolute;
+            float: left;
+            top: 48px;
+            left: 400px;
+            margin-left: 30px;
+            color: rgb(211, 211, 211);
+        }
+        #followers {
+            position: absolute;
+            top: 160px;
+            left: 240px;
+            margin-left: 30px;
+            color: rgb(211, 211, 211);
+            z-index: 2;
+        }
+        #sectionrect {
+            width: 1920px;
+            position: absolute;
+            max-width: 101%;
+            top: 272px;
+            left: -10px;
+            display: flex;
+            margin-top: 4px;
+        }
+        .section {
+            width: 1920px;
+            background-color: rgb(56, 56, 56);
+            padding: 10px;
+            padding-left: 300px;
+            color: rgb(211, 211, 211);
+        }
+        .bio {
+            position: absolute;
+            left: 650px;
+        }
+        .section:hover {
+            color: rgb(91, 91, 91);
+            cursor: pointer;
+        }
+        #postrect {
+            position: absolute;
+            top: 350px;
+            left: 30px;
+        }
+        .post {
+            padding-left: 10px;
+        }
+        .postname {
+            background-color: rgb(162, 162, 162);
+            border-top: 3px solid rgb(122, 122, 122);
+            border-top-right-radius: 5%;
+            border-top-left-radius: 5%;
+            padding: 10px;
+            padding-left: 20px;
+            color: rgb(255, 255, 255);
+        }
+        .description {
+            border-right: 1px solid rgb(122, 122, 122);
+            border-left: 1px solid rgb(122, 122, 122);
+            padding: 10px;
+            padding-left: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: rgb(80, 80, 80);
+            margin-top: -18px;
+            margin-bottom: -25px;
+        }
+        .postdate {
+            color: rgb(101, 101, 101);
+            background-color: rgb(211, 211, 211);
+            right: 10px;
+            padding: 10px;
+            padding-left: 20px;
+            margin-bottom: 50px;
+        }
+        .link {
+            color: rgb(56, 56, 56);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="maintab">
+<h1>BlockyBlog</h1>
+<h2 id="home">Home</h2>
+<h2 id="profile">Profile</h2>
+</div>
+
+<div id="profilerect">
+<img id="avatar" src="https://upload.wikimedia.org/wikipedia/ru/7/77/Pikachu.png">
+
+<h2 id="username">PikaChoi</h2>
+    <p id="usertag">@pika.choi</p>
+</div>
+
+<p id="followers">538 followers</p>
+
+<div id="sectionrect">
+<h3 class="section">Posts</h3>
+<a href="Lab1%20Proj%20Blog1.html"><h3 class="section bio" >Bio</h3></a>
+</div>
+
+
+<div id="postrect">
+
+        <div class="post">
+<h3 class="postname">PLS, help! CSS table styling</h3>
+    <p class="description">Please give me some sources for styling tables in css. I've roamed the internet for a couple days,
+    but couldn't find anything. If you know something, message me, will be very grateful.</p>
+
+<h6 class="postdate">Posted on February 2</h6>
+        </div>
+
+    <div class="post">
+        <h3 class="postname">Yoo, look, webpage!</h3>
+        <p class="description">Wrote my first webpage with images from wikipedia!
+            Btw, I'm using <a class="link" target="_blank" href="https://www.khanacademy.org/computing/computer-programming/html-css/css-text-properties/pp/project-blog">khanacademy
+            </a>, if you're interested.</p>
+
+        <h6 class="postdate">Posted on January 30</h6>
+    </div>
+
+    <div class="post">
+        <h3 class="postname">Hello, world!</h3>
+        <p class="description">Starting to use BlockyBlog to update my progress in WebDev.</p>
+
+        <h6 class="postdate">Posted on January 27</h6>
+    </div>
+</div>
+
+
+</body>
+</html>
