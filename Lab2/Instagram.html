@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        body {
+            font-size: 0.75em;
+            font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        #inst-ph {
+            position: relative;
+            top: 8px;
+            left: 236px;
+        }
+        #signup-frame, #login-frame {
+            border: 1px solid rgb(219, 219, 219);
+            position: absolute;
+            width: 267px;
+            left: 675px;
+        }
+        #login-frame {
+            top: 45px;
+            height: 319px;
+            padding: 40.3px;
+        }
+        #signup-frame {
+            width: 320px;
+            height: 55px;
+            top: 457px;
+            font-size: 1.2em;
+            padding-left: 28px;
+            padding-top: 6px;
+            letter-spacing: -0.2px;
+        }
+        #signup {
+            color: rgb(0, 149, 247);
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: -0.2px;
+        }
+        #inst-log {
+            position: absolute;
+            left: 79px;
+            top: 40px;
+        }
+        #email, #password {
+            border: 1px solid rgb(219, 219, 219);
+            border-radius: 2px;
+            background-color: rgb(250, 250, 250);
+            width: 256px;
+            height: 34px;
+            padding-left: 7.5px;
+            font-size: 1em;
+            font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        #email {
+            position: absolute;
+            top: 136.5px;
+        }
+        #password {
+            position: absolute;
+            top: 180.5px;
+        }
+        #login-but {
+            border: none;
+            border-radius: 8px;
+            background-color: rgb(76, 181, 249);
+            color: white;
+            position: absolute;
+            top: 232.5px;
+            width: 268px;
+            height: 32px;
+            font-size: 1.16em;
+            font-weight: 600;
+            padding-bottom: 3px;
+            padding-right: 8px;
+            font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        #line {
+            border-top: 1px solid rgb(219, 219, 219);
+            border-radius: 2px;
+            position: absolute;
+            top: 289px;
+            width: 268px;
+            height: 1px;
+        }
+        #or {
+            position: absolute;
+            top: 259px;
+            left: 140px;
+            background-color: white;
+            color: rgb(138, 115, 115);
+            padding-left: 19px;
+            padding-right: 19px;
+            font-size: 1.5em;
+            letter-spacing: -0.5px;
+        }
+        #facebook-login {
+            position: absolute;
+            top: 324px;
+            left: 84px;
+        }
+        #forgot {
+            position: absolute;
+            top: 364px;
+            left: 129px;
+            text-decoration: none;
+            color: rgb(0, 55, 107);
+        }
+        #download {
+            position: absolute;
+            top: 522px;
+            left: 769.5px;
+            font-size: 1.15em;
+            letter-spacing: 0.1px;
+        }
+        #google-play {
+            position: absolute;
+            top: 571px;
+            left: 722.5px;
+        }
+        a#google-play img, a#microsoft img {
+            height: 40px;
+        }
+        a#microsoft img {
+            width: 111px;
+        }
+        #microsoft {
+            position: absolute;
+            top: 571px;
+            left: 864.5px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <img id="inst-ph" src="instagram%20photos.png" alt="Instagram screenshots">
+
+    <div id="login-frame">
+        <img id="inst-log" src="instagram%20logo.png" alt="Instagram logo">
+        <form>
+            <input id="email" type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+            <input id="password" type="password" placeholder="Пароль">
+            <input id="login-but" type="button" value="Войти">
+        </form>
+
+        <div id="line">
+        </div>
+        <p id="or">или</p>
+
+        <a id="facebook-login" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=124024574287414&kid_directed_site=0&app_id=124024574287414&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fclient_id%3D124024574287414%26locale%3Dru_RU%26redirect_uri%3Dhttps%253A%252F%252Fwww.instagram.com%252Faccounts%252Fsignup%252F%26response_type%3Dcode%252Cgranted_scopes%26scope%3Demail%26state%3D%257B%2522fbLoginKey%2522%253A%25221pp183w6ctoe0127f4v31845orrt3ih4vea7ai71e1zsy6nn6j%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D98acbc26-510e-40bc-9455-7c4f45c9fd07%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fsignup%2F%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D%257B%2522fbLoginKey%2522%253A%25221pp183w6ctoe0127f4v31845orrt3ih4vea7ai71e1zsy6nn6j%2522%252C%2522fbLoginReturnURL%2522%253A%2522%252Ffxcal%252Fdisclosure%252F%253Fnext%253D%25252F%2522%257D%23_%3D_&display=page&locale=ru_RU&pl_dbl=0">
+            <img src="facebook%20login.png" alt="login with Facebook"></a>
+        <a id="forgot" href="https://www.instagram.com/accounts/password/reset/">Забыли пароль?</a>
+    </div>
+
+    <div id="signup-frame">
+        <p>
+            У вас ещё нет аккаунта?
+            <a id="signup" href="https://www.instagram.com/accounts/emailsignup/">
+                Зарегистрироваться
+            </a>
+        </p>
+    </div>
+
+    <p id="download">Установите приложение.</p>
+
+    <div id="download-frame">
+    <a id="google-play" target="_blank" href="https://play.google.com/store/apps/details?id=com.instagram.android&referrer=ig_mid%3D2F219114-7A6C-4D45-BF8A-1DB2A0665A39%26utm_campaign%3DloginPage%26utm_content%3Dlo%26utm_source%3Dinstagramweb%26utm_medium%3Dbadge&pli=1">
+        <img src="Google%20play.png">
+    </a>
+    <a id="microsoft" target="_blank" href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=0%2C0%2C1304%2C768">
+        <img src="Microsoft.png">
+    </a>
+    </div>
+</body>
+</html>

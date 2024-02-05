@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook - выполните вход или зарегистрируйтесь</title>
+    <style>
+        body {
+            background-color: rgb(240, 242, 245);
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            overflow-x: hidden;
+            letter-spacing: 0.2px;
+        }
+        #logo {
+            width: 281px;
+            position: relative;
+            top: 191px;
+            left: 138px;
+        }
+        #slog {
+            position: relative;
+            top: 169px;
+            left: 145.5px;
+            font-size: 2.3em;
+            color: rgb(28, 30, 33);
+        }
+        #login-frame {
+            position: absolute;
+            left: 735px;
+            top: 132px;
+            background-color: white;
+            padding: 15px;
+            padding-top: 16px;
+            width: 365px;
+            height: 319px;
+            border-radius: 2%;
+            box-shadow: 0px 5px 10px 3px rgb(218, 218, 218);
+        }
+        #email, #password, #button-login, #create-new {
+            font-family: Helvetica, Arial, sans-serif;
+            width: 345px;
+            height: 48px;
+            border-radius: 6px;
+            border: solid 1px #dadada;
+            font-size: 1.38em;
+            padding-left: 16px;
+            letter-spacing: 0.2px;
+        }
+        #line {
+            position: absolute;
+            top: 249px;
+            width: 361px;
+            height: 1px;
+            padding-bottom: 1px;
+            border-bottom: 1px solid #dadada;
+            z-index: 40;
+        }
+        input::placeholder {
+            color: rgb(144, 148, 156);
+        }
+        #button-login {
+            border: none;
+            background-color: rgb(24, 119, 242);
+            font-weight: bold;
+            font-size: 1.7em;
+            width: 364px;
+            color: white;
+            padding-left: 5px;
+            letter-spacing: -0.15px;
+        }
+        #create-new {
+            position: absolute;
+            left: 81px;
+            top: 278px;
+            border: none;
+            background-color: rgb(66, 183, 42);
+            font-weight: bold;
+            width: 231px;
+            color: white;
+            padding-left: 6px;
+            letter-spacing: 0.25px;
+        }
+        #button-login:hover, #create-new:hover {
+            cursor: pointer;
+        }
+        #create-new:hover {
+            background-color: rgb(62, 168, 40);
+        }
+        #forgot-pass {
+            position: absolute;
+            left: 142.5px;
+            top: 214px;
+            font-size: 1.15em;
+            color: rgb(24, 119, 242);
+            text-decoration: none;
+            letter-spacing: 0.1px;
+        }
+        #create-p {
+            position: relative;
+            top: 282px;
+            left: 280px;
+            font-size: 1.19em;
+            letter-spacing: -0.15px;
+            text-align: center;
+            line-height: 19px;
+        }
+        #link-create {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #link-create:hover, #forgot-pass:hover {
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="facebook%20logo.png" alt="facebook logo">
+    <p id="slog">
+        Facebook помогает вам всегда<br> оставаться на связи и общаться со<br> своими знакомыми.
+    </p>
+
+    <div id="login-frame">
+    <form id="login">
+        <input id="email" type="text" placeholder="Электронный адрес или номер телефона"><br><br>
+        <input id="password" type="password" placeholder="Пароль"><br><br>
+        <input id="button-login" type="button" value="Вход"><br><br>
+    </form>
+
+    <a id="forgot-pass" href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">
+        Забыли пароль?
+    </a>
+    <div id="line">
+    </div>
+
+    <form>
+        <input id="create-new" type="button" value="Создать новый аккаунт">
+    </form>
+    </div>
+
+    <div id="create-p">
+
+    <p><a id="link-create" href="https://www.facebook.com/pages/create/?ref_type=registration_form">
+        Создать Cтраницу
+    </a>знаменитости, музыкальной группы или <br>компании.</p>
+    </div>
+</body>
+</html>

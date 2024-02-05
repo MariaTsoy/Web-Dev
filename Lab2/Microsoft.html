@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft - домашняя страница</title>
+    <style>
+        body {
+            margin: 0;
+            padding-left: 5px;
+            font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        #main {
+            height: 51px;
+            padding-top: 5px;
+            letter-spacing: 0.1px;
+        }
+        #main a {
+            position: absolute;
+            font-size: 0.8em;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        #microsoft-logo {
+            width: 108px;
+            position: relative;
+            top: 9px;
+            left: 69px;
+        }
+        #microsoft365 {
+            left: 212.3px;
+        }
+        #office {
+            left: 313px;
+        }
+        #windows {
+            left: 368.6px;
+        }
+        #support {
+            left: 443px;
+        }
+        #mic-products {
+            position: absolute;
+            width: 300px;
+            left: 965px;
+        }
+        #down {
+            position: absolute;
+            top: 22px;
+            left: 141px;
+            width: 11.5px;
+            margin-left: 3px;
+        }
+        #search {
+            position: absolute;
+            left: 1139px;
+            top: 17.5px;
+        }
+        #search img {
+            width: 25.7px;
+        }
+        #search:hover {
+            cursor: pointer;
+        }
+        #account {
+            position: absolute;
+            left: 1180.46px;
+            top: 10.4px;
+        }
+        #account img {
+            width: 37.08px;
+        }
+        #account:hover {
+            cursor: pointer;
+        }
+
+        #big-link img {
+            width: 1277px;
+        }
+        #big-link p {
+            width: 500px;
+            position: absolute;
+            top: 216px;
+            left: 117px;
+            color: white;
+        }
+        #big-link #bigger {
+            font-size: 1.81em;
+            font-weight: 600;
+        }
+        #big-link #smaller-par {
+            position: absolute;
+            top: 55px;
+        }
+        #more-bing {
+            position: absolute;
+            top: 383px;
+            left: 117px;
+        }
+        #more-bing input {
+            padding-bottom: 3px;
+            width: 218px;
+            height: 40px;
+            background-color: rgb(0, 103, 184);
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        #more-bing input:hover {
+            cursor: pointer;
+            background-color: rgb(0, 91, 164);
+        }
+        #microsoft-logo:hover {
+            cursor: pointer;
+        }
+        #products-p {
+            width: 138px;
+            cursor: pointer;
+        }
+
+        #play-panel {
+            position: absolute;
+            top: 623px;
+            left: 540px;
+            width: 200px;
+            padding-top: 3px;
+        }
+        #play-panel:hover, #left:hover{
+            cursor: pointer;
+        }
+        #dot1:hover, #dot2:hover {
+            cursor: default;
+        }
+        #right:hover {
+            cursor: pointer;
+        }
+        #left {
+            position: absolute;
+            left: 49px;
+        }
+        #dot1 {
+            position: absolute;
+            left: 97px;
+            top: 6px;
+        }
+        #dot2 {
+            position: absolute;
+            left: 138px;
+            top: 8px;
+        }
+        #right {
+            position: absolute;
+            left: 179px;
+            top: 5px;
+        }
+
+        #block-stack {
+            position: absolute;
+            top: 764px;
+            left: 64px;
+        }
+        .block {
+            width: 272px;
+            height: 500px;
+        }
+        .block img {
+            width: 272px;
+        }
+        .block h2 {
+            font-weight: normal;
+            position: absolute;
+            top: 149px;
+            font-weight: 500;
+            line-height: 1.18em;
+        }
+        #onedrive {
+            position: absolute;
+            left: 296px;
+            top: 0px;
+        }
+        #onenote {
+            position: absolute;
+            left: 591px;
+            top: 0px;
+        }
+        #outlook {
+            position: absolute;
+            left: 887px;
+            top: 0px;
+        }
+        .block p {
+            position: absolute;
+            top: 193px;
+        }
+        .block .block-arrow {
+            position: absolute;
+            top: 5px;
+            width: 15px;
+        }
+        .download-app {
+            position: absolute;
+            color: rgb(0, 103, 184);
+            font-weight: 500;
+        }
+        #edge .download-app, #onedrive .download-app {
+            top: 313px;
+        }
+        #edge .block-arrow {
+            left: 64px;
+        }
+        #onedrive .block-arrow {
+            left: 90px;
+        }
+        #onenote .download-app {
+            top: 265px;
+        }
+        #onenote .block-arrow {
+            left: 117px;
+        }
+        #outlook #be-line {
+            top: 222px;
+        }
+        #outlook .download-app {
+            top: 294px;
+        }
+        #outlook .block-arrow {
+            left: 64px;
+        }
+
+        #main p:hover {
+            border-bottom: 2px solid black;
+        }
+        .block:hover {
+            cursor: pointer;
+        }
+        .download-app {
+            padding-bottom: -5px;
+        }
+        .download-app:hover {
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img id="microsoft-logo" src="microsoft%20logo.png">
+        <a id="microsoft365" href="https://www.microsoft.com/ru-ru/microsoft-365?rtc=1">
+            <p>Microsoft 365</p>
+        </a>
+        <a id="office" href="https://www.microsoft.com/ru-ru/microsoft-365/microsoft-office?rtc=1">
+            <p>Office</p>
+        </a>
+        <a id="windows" href="https://support.microsoft.com/ru-ru/windows">
+            <p>Windows</p>
+        </a>
+        <a id="support" href="https://support.microsoft.com/ru-ru">
+            <p>Поддержка</p>
+        </a>
+        <a id="mic-products">
+            <p id="products-p">
+                Продукты Майкрософт
+                <img id="down" src="arrow%20down.png">
+            </p>
+        </a>
+        <a id="search">
+            <img src="magn%20glass.png">
+        </a>
+        <a id="account">
+            <img src="account%20pic.png">
+        </a>
+    </div>
+
+    <div id="big-link">
+        <a href="https://www.microsoft.com/ru-ru/bing?form=MG0AUO&OCID=MG0AUO#faq">
+            <img src="bing%20picture.jpg">
+            <p>
+                <span id="bigger">Встречайте новый Bing<br></span>
+                <span id="smaller-par">Задавайте реальные вопросы. Общайтесь и<br>
+                создавайте. Получайте ответы с веб-помощником<br>
+                на базе искусственного интеллекта.</span>
+            </p>
+            <form id="more-bing">
+                <input  type="button" value="Подробнее о новом Bing">
+            </form>
+        </a>
+    </div>
+
+    <div id="play-panel">
+        <img id="pause" src="pause.png">
+        <img id="left" src="left%20arrow.png">
+        <img id="dot1" src="blank%20dot.png">
+        <img id="dot2" src="filled%20dot.png">
+        <img id="right" src="right%20arrow.png">
+    </div>
+
+    <div id="block-stack">
+    <div class="block" id="edge">
+        <a>
+            <img src="edge%20picture.webp">
+            <h2>Microsoft Edge</h2>
+            <p>Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</p>
+            <p class="download-app">Скачать <img class="block-arrow" src="block%20arrow.png"></p>
+        </a>
+    </div>
+    <div class="block" id="onedrive">
+        <a>
+            <img src="woman%20work.webp">
+            <h2>Microsoft OneDrive</h2>
+            <p>Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.</p>
+            <p class="download-app">Подробнее <img class="block-arrow" src="block%20arrow.png"></p>
+        </a>
+    </div>
+    <div class="block" id="onenote">
+        <a>
+            <img src="man%20work.webp">
+            <h2>OneNote</h2>
+            <p>Приведите свои заметки и дела в порядок.</p>
+            <p class="download-app">Узнать больше <img class="block-arrow" src="block%20arrow.png"></p>
+        </a>
+    </div>
+    <div class="block" id="outlook">
+        <a>
+            <img src="outlook%20pic.webp">
+            <h2>Outlook для iOS и Android</h2>
+            <p id="be-line">Будьте на связи. Организовывайте. Успевайте больше.</p>
+            <p class="download-app">Скачать <img class="block-arrow" src="block%20arrow.png"></p>
+        </a>
+    </div>
+    </div>
+
+</body>
+</html>
