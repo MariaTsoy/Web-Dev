@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function multiplyNumeric(obj) {
+            for (let key in obj) {
+                if (Number(obj[key])) {
+                    obj[key] *= 2;
+                }
+            }
+        }
+
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+
+        multiplyNumeric(menu);
+
+        alert(menu.height);
+        alert(menu.width);
+        alert(menu.title);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function readNumber() {
+            let num = prompt("Enter num", "");
+            while (num) {
+                if (+num) {
+                    return +num;
+                }
+                num = prompt("Enter num", "");
+            }
+        }
+
+        readNumber();
+    </script>
+</body>
+</html>

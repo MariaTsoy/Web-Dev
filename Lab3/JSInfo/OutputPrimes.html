@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Enter a num", "");
+        outer:
+        for (let i = 2; i <= num; i++) {
+            for (let u = 2; u <= i ** 1/2; u++) {
+                if (i % u === 0) {
+                    continue outer;
+                }
+            }
+            alert(i);
+        }
+    </script>
+</body>
+</html>

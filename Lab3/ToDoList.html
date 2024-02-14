@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        h1 {
+            background-color: rgb(117, 117, 117);
+            color: white;
+            padding-top: 20px;
+            padding-left: 40px;
+            padding-bottom: 20px;
+            flex: auto;
+        }
+        h2 {
+            flex: auto;
+            text-align: center;
+            font-size: 2em;
+        }
+        #new_task {
+            position: relative;
+            left: 38%;
+            text-align: center;
+            height: 100%;
+            width: 20%;
+            padding: 2%;
+            margin-bottom: 3%;
+            background-color: rgb(132, 185, 151);
+            border-radius: 5px;
+        }
+        #type {
+            width: 70%;
+            padding-bottom: 3%;
+            padding-top: 3%;
+            border-radius: 5px;
+            border: none;
+            margin-right: 5%;
+        }
+        #add {
+            width: 18%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+        }
+
+        #tasks {
+            float: left;
+            position: relative;
+            left: 20%;
+            text-align: center;
+            height: 100%;
+            width: 60%;
+
+        }
+        .task {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-bottom: 5%;
+            background-color: rgb(192, 192, 192);
+            border-radius: 5px;
+        }
+        p {
+            margin-left: 20%;
+            color: rgb(89, 89, 89);
+            font-weight: 600;
+        }
+        .check {
+            position: absolute;
+            top: 15%;
+            left: 5%;
+        }
+        .delete {
+            position: absolute;
+            top: 15%;
+            right: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>To do list</h1>
+    <h2>To do list</h2>
+
+    <form id="new_task">
+        <input type="text" placeholder="New task" id="type">
+        <input type="button" value="Add" id="add" onclick="addTask()">
+    </form>
+
+    <div id="tasks">
+        <div class="task" id="1">
+            <form class="check">
+                <input type="checkbox">
+            </form>
+            <p>First task</p>
+            <form>
+                <input type="button" value="Delete" class="delete"
+                onclick="deleteTask(this)">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let id_num = 2;
+        function deleteTask(e) {
+            document.getElementById(e.parentElement.parentElement.id).remove();
+        }
+
+        function addTask() {
+            let div = document.createElement('div');
+            let form_check, form_del;
+            form_check = form_del = document.createElement('form');
+            let inp_check, inp_del;
+            inp_check = inp_del = document.createElement('input');
+            let p = document.createElement('p');
+            let text = document.createTextNode(`${document.getElementById('type').value}`);
+
+            div.setAttribute('id', `${id_num}`);
+            div.setAttribute('class', 'task');
+            form_check.setAttribute('class', 'check');
+            inp_check.setAttribute('type', 'checkbox');
+            inp_del.setAttribute('type', 'button');
+            inp_del.setAttribute('value', 'Delete');
+            form_check.setAttribute('class', 'delete');
+            inp_del.setAttribute('onclick', 'delete_task(this)');
+
+            form_check.appendChild(inp_check);
+            form_del.appendChild(inp_del);
+            p.appendChild(text);
+            div.appendChild(form_check);
+            div.appendChild(p);
+            div.appendChild(form_del);
+            document.getElementById("tasks").appendChild(div);
+            id_num++;
+        }
+    </script>
+</body>
+</html>
