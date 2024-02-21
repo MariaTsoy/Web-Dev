@@ -1,0 +1,19 @@
+<body>
+<h1 id="title">{{title}}</h1>
+<div class="elements">
+<div class="product" *ngFor="let product of products">
+  <img class="product_img" src={{product.image}}>
+  <div class="product_info">
+    <h2>{{ product.name }}</h2>
+    <p>Rating: {{product.rating}}</p>
+    <div class="links">
+      <a href={{product.share}}>Share in Telegram</a>
+      <a href={{product.more}}>View on Kaspi</a>
+    </div>
+    <p>{{product.description}}</p>
+  </div>
+</div>
+</div>
+</body>
+
+
