@@ -1,0 +1,16 @@
+<body>
+<div id="home">
+  <h1 id="title">{{title}}</h1>
+  <input type="button" (click)="changeCategory(0); setCategory(0)" value="{{this.categories[0]}}">
+  <input type="button" (click)="changeCategory(1); setCategory(1)" value="{{this.categories[1]}}">
+  <input type="button" (click)="changeCategory(2); setCategory(2)" value="{{this.categories[2]}}">
+  <input type="button" (click)="changeCategory(3); setCategory(3)" value="{{this.categories[3]}}">
+</div>
+<div *ngIf="choseCategory">
+  <app-product-list [category]="category"></app-product-list>
+</div>
+</body>
+
+
+
+
