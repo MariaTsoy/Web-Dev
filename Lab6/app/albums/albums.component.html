@@ -1,0 +1,5 @@
+<div *ngFor="let album of albums" (click)="AlbumDetail(album.id)">
+  <h2>{{album.title}}</h2>
+  <img src="{{album.thumbnailUrl}}">
+  <button (click)="deleteAlbum(album.id)">Delete</button>
+</div>
