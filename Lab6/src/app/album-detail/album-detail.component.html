@@ -1,0 +1,10 @@
+<h1>Details</h1>
+<div>
+  <h2>{{album.title}}</h2>
+  <p>Album ID: {{ album.id }}</p>
+  <img src="{{album.thumbnailUrl}}">
+  <h2><input type="text" #newNameInput /></h2>
+  <button (click)="updateAlbumName(album.id, newNameInput.value)">Change Name</button>
+</div>
+<button (click)="goBack()">Return</button>
+<button (click)="redirectToPhotos()">Photos</button>

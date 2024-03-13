@@ -1,0 +1,20 @@
+body {
+  font-family: Calibri;
+  background-color: #646464;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  height: 13000px;
+  width: 97.5%;
+  padding-top: 20px;
+  padding-left: 30px;
+  overflow-x: hidden;
+}
+#items {
+}
+#item {
+  padding-left: 5%;
+  padding-right: 10%;
+}
+img {
+}
